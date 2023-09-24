@@ -265,7 +265,7 @@ main {
 .section-container .vuelos-privados {
   width: 100%;
   height: 960px;
-  background-image: url("/root/media/VUELOS PRIVADOS.jpg");
+  background-image: url("../../media/VUELOS PRIVADOS.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -287,7 +287,7 @@ main {
 .section-container .experiencias {
   width: 100%;
   height: 960px;
-  background-image: url(/root/media/EXPERIENCIAS.jpg);
+  background-image: url("/root/media/EXPERIENCIAS.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
