@@ -1,0 +1,194 @@
+// Contact orm
+
+.contact-form {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+
+	text {
+		box {
+			background-color: white;
+		}
+	}
+
+}
+
+#input-fecha {
+	background-color: white;
+	color: black;
+}
+
+
+// Flights form
+.flights-form-button {
+	background-color: #212529;
+	border-radius: 20px;
+}
+
+.flights-form {
+	width: 100%;
+	max-width: 400px;
+	padding: 25px;
+	margin: 0 auto;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-color: white;
+	color: black;
+	box-shadow: 13px 5px 44px -8px rgba(255, 255, 255, 0.61);
+	-webkit-box-shadow: 13px 5px 44px -8px rgba(255, 255, 255, 0.61);
+	-moz-box-shadow: 13px 5px 44px -8px rgba(255, 255, 255, 0.61);
+	font-family: $font-primary;
+	font-weight: 600;
+
+	div {
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+
+		label {
+			font-size: 15px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+	}
+}
+
+.input-origen {
+	width: 100%;
+	display: flex;
+	flex-direction: row !important;
+
+	img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.input-destino {
+	width: 100%;
+	display: flex;
+	flex-direction: row !important;
+
+	img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.flights-form-radio-inputs {
+	width: 100%;
+	padding: 10px 0;
+	display: flex;
+	background-color: white;
+	flex-direction: row !important;
+	justify-content: space-evenly !important;
+
+	label {
+		width: fit-content !important;
+
+		input {
+			width: fit-content !important;
+			margin: 0 10px;
+		}
+	}
+}
+
+//modificaciones visuales del formulario //
+#form-input-1 {
+	background-color: white;
+
+	input-placeholder {
+		color: blue;
+	}
+
+	/* IE 10+ */
+	color: black;
+}
+
+#form-input-1::placeholder {
+	color: black
+}
+
+#form-input-2 {
+	background-color: white;
+
+	input-placeholder {
+		color: blue;
+	}
+
+	/* IE 10+ */
+	color: black;
+}
+
+#form-input-2::placeholder {
+	color: black
+}
+
+#form-input-3 {
+	background-color: white;
+
+	input-placeholder {
+		color: blue;
+	}
+
+	/* IE 10+ */
+	color: black;
+}
+
+#form-input-3::placeholder {
+	color: black
+}
+
+#form-input-4 {
+	background-color: white;
+	option{
+		font-weight: 600;
+	}
+
+	input-placeholder {
+		color: blue;
+	}
+
+	/* IE 10+ */
+	color: black;
+}
+
+#form-input-4::placeholder {
+	color: black
+}
+
+.button-enviar-volver {
+	display: flex;
+	flex-direction: row;
+}
+
+#cotizar-volver {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+// Message sent advice
+
+.message-sent {
+	width: 100%;
+	max-width: 400px;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	cursor: default;
+
+	svg {
+		margin-top: 15px;
+	}
+}

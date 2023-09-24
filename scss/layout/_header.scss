@@ -1,0 +1,163 @@
+
+
+header{
+    width: 100%;
+    padding: 0 5%;
+    position: fixed;
+    z-index: 25;
+    top: 20px;
+    right: 0;
+    left: 0;
+}
+
+
+
+
+// NavBar
+
+.nav-bar{
+    width: 100%;
+    height: $nav-bar-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 5px 0 $color-transparent;
+    border-radius: 50px;
+    div{
+        width: 20%;
+    }
+    @media all and (min-width: $breakpoint-xs){
+        padding: 0 9%;
+    }
+    @media all and (min-width: $breakpoint-m){
+        padding: 0 12%;
+    }
+    body.dark & {
+        background: rgba(0, 0, 0, 0.75);
+        border: solid 0.5px $color-white;
+    }
+}
+
+.nav-bar-button{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    transition: all ease 1000ms;
+    &:hover{
+        color: $color-accent;
+        transition: all ease 250ms;
+    }
+}
+
+.nav-bar-menu{
+    width: fit-content;
+    max-width: 440px;
+    margin: 35px auto;
+    padding: 50px 0;
+    //padding-top: 15px;
+    display: none;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: fixed;
+    top: calc(#{$nav-bar-height} + 20px);
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    box-shadow: 0 0 5px 0 $color-transparent;
+    padding-left: 50px;
+        padding-right: 50px;
+    @media all and (min-width: $breakpoint-xxs){
+        height: auto;
+        margin: 30px 0;
+        left: 5%;
+        align-items: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: center;
+    }
+    body.dark & {
+        background: rgba(0, 0, 0, 0.75);
+        border: solid 0.5px $color-white;
+    }
+}
+
+.nav-bar-menu-option{
+    a{
+        color: $color-black;
+        //text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+        font-size: 17px;
+        font-weight: 500;
+        //text-transform: uppercase;
+        transition: all ease 1000ms;
+        font-weight: 600;
+        align-items: flex-start;
+    }
+    &:hover{
+        a{
+            color: $color-accent;
+            transition: all ease 250ms;
+        }
+    }
+    &:active{
+        a{
+            transform: scale(0.88);
+            transition: all ease 250ms;
+        }
+    }
+    @media all and (min-width: $breakpoint-s){
+        font-size: 18px;
+    }
+    body.dark &{
+        a{
+            color: $color-white;
+        }
+        &:hover{
+            a{
+                color: $color-accent;
+            }
+        }
+    }
+}
+.display-flex-to-top-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.nav-bar-logo{
+    width: 20%;
+    min-width: 130px;
+    max-width: 220px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    img{
+        width: 100%;
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+    }
+    @media all and (min-width: $breakpoint-xs){
+        min-width: 220px;
+    }
+}
+
+.nav-bar-switches{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+    align-items: flex-end;
+    @media all and (min-width: $breakpoint-s){
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+        align-items: center;
+    }
+}
+

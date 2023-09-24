@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+	<HEAD>
+		<!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+        <link rel="manifest" href="media/favicon/site.webmanifest">
+        <link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="media/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#e8e8e8">
+        <meta name="msapplication-config" content="media/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+		<!-- Meta Tags -->
+		<TITLE>403 Forbidden</TITLE>
+		<meta charset="utf-8">
+		<meta name="author" content="southBridge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- CSS Styles -->
+		<Base href = "/" />
+		<link rel="stylesheet" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</HEAD>
+	<BODY>
+		<!-- Web Page -->
+		<main class="error-main">
+			<div class="error">
+				<div class="error-logo">
+					<img class="light-mode" src="media/nav-bar-logo.png" alt="Logo Phaway Vuelos">
+    	            <img class="dark-mode" src="media/nav-bar-logo-dark.png" alt="Logo Phaway Vuelos">
+				</div>
+				<div class="error-message">
+					<p>
+						<strong>403 error: "Forbidden"</strong>.<br>
+						You don't have permission to access <!--#echo var="REQUEST_URI" --> on this server.<br>
+						We are sorry.<br>
+						We invite you to browse the rest of our website.
+					</p>
+					<I><!--#echo var="HTTP_HOST" --></I>
+				</div>
+				<div class="error-message">
+					<p>
+						<strong>error 403: "Prohibido"</strong>.<br>
+						Usted no tiene permiso para acceder a <!--#echo var="REQUEST_URI" --> en este servidor.<br>
+						Lo sentimos.<br>
+						Lo invitamos a recorrer el resto de nuestro sitio web.
+					</p>
+					<I><!--#echo var="HTTP_HOST" --></I>
+				</div>
+				<a class="error-button" href="index.html">
+					<h1>phawayvuelos.com.ar</h1>
+				</a>
+			</div>
+		</main>
+		<div class="signature">
+            <p>© 2023 Todos los derechos reservados.</p>
+            <h6>Sitio web desarrollado por <a href="https://www.southbridge.com.ar" target="_blank" rel="noopener noreferrer">&#60;southBridge> IT Solutions</a></h6>
+        </div>
+		<!-- JavaScript -->
+		<script src="js/font-awesome.js"></script>
+		<script src="js/wow.js"></script>
+		<script>new WOW().init();</script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/main.js"></script
+	</BODY>
+</HTML>

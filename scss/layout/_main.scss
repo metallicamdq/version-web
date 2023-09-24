@@ -1,0 +1,955 @@
+main {
+    width: 100%;
+    background-color: white;
+}
+
+//nuevo index//
+
+.div-with-gradient {
+    width: 100%;
+    height: 10px;
+    border-radius: 25px;
+    background: white;
+}
+
+.section-container {
+    background-color: white;
+
+    .vuelos-privados {
+        width: 100%;
+        height: 960px;
+        background-image: url("/root/media/VUELOS\ PRIVADOS.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: normal;
+        align-content: normal;
+        color: black;
+
+        li {
+            color: black;
+
+            span {
+                color: black;
+                font-weight: 700;
+            }
+
+        }
+
+    }
+
+    .experiencias {
+        width: 100%;
+        height: 960px;
+        background-image: url(/root/media/EXPERIENCIAS.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: normal;
+        align-content: normal;
+        color: black;
+
+        .card {
+            width: min-content;
+        }
+
+        li {
+            color: black;
+
+            span {
+                color: black;
+                font-weight: 700;
+            }
+
+        }
+    }
+
+    .venta-aeronaves {
+        width: 100%;
+        height: 960px;
+        background-image: url(/root/media/VENTA\ DE\ AERONAVES.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: normal;
+        align-content: normal;
+        color: black;
+
+        li {
+            color: black;
+
+            span {
+                color: black;
+                font-weight: 700;
+            }
+
+        }
+    }
+
+    .contacto {
+        width: 100%;
+        height: 960px;
+        background-image: url(/root/media/CONTACTO.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: normal;
+        align-content: normal;
+        color: black;
+
+        li {
+            color: black;
+
+            span {
+                color: black;
+                font-weight: 700;
+            }
+
+        }
+    }
+}
+
+
+// Sobre Nosotros
+
+.about-us {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 25px;
+    align-items: center;
+    cursor: default;
+
+    img {
+        width: 90%;
+        max-width: 240px;
+        padding-bottom: 20px;
+    }
+
+    strong {
+        font-size: 20px;
+        text-shadow: 1px 1px 2px rgba(4, 4, 4, 0.5);
+        text-align: center;
+    }
+
+    p {
+        max-width: 750px;
+        overflow-wrap: break-word;
+        line-height: 1.25;
+        font-size: 16.5px;
+
+    }
+
+    @media screen and (min-width: $breakpoint-s) {
+        padding: 55px 0;
+    }
+
+    body.dark & {
+        strong {
+            text-shadow: 1px 1px 1px rgba(253, 254, 255, 0.4);
+        }
+    }
+}
+
+
+
+
+// Vuelos Privados
+
+.flights {
+    min-height: 100vh;
+    width: 100%;
+    padding: 165px 5% 50px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    color: $color-white;
+    background-image: url("../media/flights-background.jpg");
+    background-size: cover;
+    background-position: center 5%;
+    //background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+
+    @media screen and (min-width: $breakpoint-m) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.flights-index {
+    background-image: url("../media/banner-inicio-ph3.jpg");
+    background-position: center 78%;
+    height: 1300px;
+    padding-bottom: 200px;
+    background-color: white;
+}
+
+.flights-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+
+    strong {
+        text-transform: uppercase;
+        font-size: 35px;
+        max-width: 400px;
+        margin: auto;
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.75);
+
+        mark {
+            color: $color-accent;
+            transition: all ease 300ms;
+            font-size: 42px;
+            font-weight: 800;
+        }
+
+        &:hover {
+            mark {
+                color: $color-complementary;
+                transition: all ease 300ms;
+            }
+        }
+    }
+
+    h2 {
+        padding-bottom: 5px;
+    }
+
+    mark {
+        background: none;
+        color: $color-white;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    @media screen and (min-width: $breakpoint-m) {
+        padding: 20px 0px;
+
+        strong {
+            font-size: 35px;
+        }
+    }
+}
+
+.fleet {
+    width: 100%;
+    padding: 0 5% 50px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.fleet-text {
+    max-width: 920px;
+    margin: 35px auto;
+
+    h2 {
+        padding: 10px 0 20px 0;
+        font-size: 20px;
+        text-shadow: 1px 1px 2px rgba(4, 4, 4, 0.8);
+    }
+
+    p {
+        margin-top: 20px;
+    }
+
+    body.dark & {
+        h2 {
+            text-shadow: 1px 1px 1px rgba(253, 254, 255, 0.7);
+        }
+    }
+}
+
+.fleet-inner {
+    margin-top: 0;
+    padding: 20px 0 40px 0;
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+
+
+// Venta de Aeronaves
+
+.aircrafts {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 35px;
+    }
+}
+
+
+
+
+// Experiencias Luxury
+
+.experiences {
+    width: 100%;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @media screen and (min-width: $breakpoint-s) {
+        padding: 55px 0;
+    }
+}
+.titulo-isologo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+
+
+        span {
+            color: #a98d02;
+            padding-left: 10px;
+        }
+    }
+}
+
+.experiences-text {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    h2 {
+        //position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        text-align: center;
+    }
+
+    h3 {
+        padding-bottom: 20px;
+        font-size: 17.5px;
+        text-shadow: 1px 1px 2px rgba(4, 4, 4, 0.8);
+    }
+
+    body.dark & {
+        h2 {
+            text-shadow: 1px 1px 1px rgba(253, 254, 255, 0.7);
+        }
+    }
+}
+
+.experiences-inner {
+    margin-top: 0;
+    padding: 20px 0 40px 0;
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+
+.experiencias-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.experiences-gift {
+    max-width: 640px;
+    margin: 25px auto;
+    h2{
+        text-align: center;
+    }
+}
+
+.video {
+    width: 100%;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+}
+
+.video-desk {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Ajustes para tablet y dispositivos más grandes */
+    .experiencias-video {
+        flex-direction: row;
+    }
+
+    .video-mob {
+        display: none;
+    }
+
+    .video-desk {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+// Experiences Pages
+
+.logo-livingba {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100%;
+
+    img {
+        width: 90%;
+        max-width: 130px;
+    }
+}
+
+.experience {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    cursor: default;
+
+    img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    @media screen and (min-width: $breakpoint-m) {
+        padding: 50px 5% 60px 5%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+}
+
+
+.experience-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    @media screen and (min-width: $breakpoint-m) {
+        gap: 70px;
+    }
+}
+
+.experience-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: justify;
+    p{
+        color: grey;
+        strong{
+            color: black;
+        }
+    }
+
+    div {
+        width: 85%;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 2px solid $color-black;
+
+        svg {
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-xxs) {
+        flex-direction: row;
+
+        div {
+            width: fit-content;
+            border-bottom: none;
+        }
+
+        p {
+            max-width: 750px;
+            overflow-wrap: break-word;
+            //line-height: 1.25;
+            font-size: 16.5px;
+            padding-left: 15px;
+            border-left: 2px solid $color-black;
+        }
+    }
+
+    body.dark & {
+        div {
+            border-bottom: 2px solid $color-white;
+        }
+
+        @media screen and (min-width: $breakpoint-xxs) {
+            div {
+                border-bottom: none;
+            }
+
+            p {
+                border-left: 2px solid $color-white;
+            }
+        }
+    }
+}
+
+
+.experience-aside {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+
+    img {
+        width: 100%;
+    }
+
+    :nth-child(2) {
+        display: none;
+    }
+
+    @media screen and (min-width: $breakpoint-s) {
+        max-width: none;
+
+
+        :nth-child(2) {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-m) {
+        max-width: 350px;
+        flex-direction: column;
+
+        :nth-child(2) {
+            display: block;
+        }
+    }
+}
+
+
+
+
+// Preguntas Frecuentes
+
+.faqs {
+    width: 95%;
+    max-width: 750px;
+    margin: auto;
+    padding: 150px 5px 50px 5px;
+    line-height: 1.25;
+
+    h5 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 30px auto;
+        overflow-wrap: break-word;
+
+        strong {
+            text-transform: uppercase;
+            font-size: 15.5px;
+            font-weight: 800;
+        }
+
+        a {
+            color: $color-primary;
+            font-weight: 700;
+
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-s) {
+        padding: 170px 5px 50px 5px;
+    }
+
+    @media screen and (min-width: $breakpoint-s) {
+        font-size: 17px;
+    }
+}
+
+
+
+
+// Contacto
+
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    padding: 165px 5% 50px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    color: $color-white;
+    background-image: url("../media/contact-background.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.65);
+    background-blend-mode: darken;
+
+    @media screen and (min-width: $breakpoint-m) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contact-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+
+// Legales
+
+.main-legal {
+    width: 95%;
+    max-width: 750px;
+    margin: auto;
+    padding: 170px 5px 20px 5px;
+    line-height: 1.25;
+
+    p {
+        overflow-wrap: break-word;
+
+        strong {
+            text-transform: uppercase;
+            font-size: 15.5px;
+            font-weight: 800;
+        }
+
+        span {
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        a {
+            color: $color-primary;
+            font-weight: 700;
+
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-s) {
+        padding: 188px 5px 30px 5px;
+    }
+
+    @media screen and (min-width: $breakpoint-s) {
+        font-size: 17px;
+    }
+}
+
+// card index//
+$black: #282828;
+$point: #212529;
+$point-light: lighten($point, 5%);
+
+$ratio: 1.618;
+$card_width: 250px;
+$card_height: $card_width * $ratio;
+$card_padding: 20px;
+$card-bgcolor: white;
+$card_margin: 5px;
+$card_round: 10px;
+$card-shadow: -20px -20px 0px 0px $point-light;
+
+$card-padding-basis: 15px;
+$card_head_padding: 0px 0px $card-padding-basis 0px;
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: $color-white;
+    color: $color-black;
+}
+
+.container {
+    width: 80%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    margin-left: auto;
+    margin-right: 800px;
+}
+
+.center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: $card-bgcolor;
+    width: $card_width;
+    min-height: $card_height;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: $card_padding;
+    margin: $card_margin;
+
+    -webkit-box-shadow: $card-shadow;
+
+    box-shadow: $card-shadow;
+    border-radius: $card_round;
+
+    -webkit-animation-name: shadow-show;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: shadow-show;
+    animation-duration: 1.5s;
+
+    -webkit-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+    transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+
+    /* custom */
+    .spanliving {
+        color: #a98d02;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 0px;
+        padding: $card_head_padding;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 30px;
+        color: $black;
+    }
+
+    hr {
+        display: block;
+        border: none;
+        height: 3px;
+        background-color: $point;
+        margin: 0px;
+
+        -webkit-animation-name: line-show;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.3s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: line-show;
+        animation-duration: 0.3s;
+        -webkit-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+        -o-transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+        transition-timing-function: cubic-bezier(0.795, 0.000, 0.165, 1.000);
+        /* custom */
+    }
+
+    p {
+        margin: $card-padding-basis 0px 0px 0px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 100;
+        letter-spacing: -0.25px;
+        line-height: 1.25;
+        font-size: 16px;
+        word-break: break-all;
+        word-wrap: pre-wrap;
+        color: $black;
+
+        -webkit-animation-name: p-show;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1.5s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: p-show;
+        animation-duration: 1.5s;
+    }
+
+    button {
+        border: none;
+        background-color: #abb5bf;
+        width: 55%;
+        margin: 10px auto;
+        padding: 10px 30px;
+        color: white;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-transform: uppercase;
+        border-radius: 23px 23px 23px 23px;
+        -webkit-border-radius: 23px 23px 23px 23px;
+        -moz-border-radius: 23px 23px 23px 23px;
+
+        a {
+            color: black;
+        }
+    }
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes line-show {
+    from {
+        margin: 0px 100px;
+    }
+
+    to {
+        margin: 0px;
+    }
+}
+
+/* Standard syntax */
+@keyframes line-show {
+    from {
+        margin: 0px 100px;
+    }
+
+    to {
+        margin: 0px;
+    }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes p-show {
+    from {
+        color: white;
+    }
+
+    to {
+        color: $black;
+    }
+}
+
+/* Standard syntax */
+@keyframes p-show {
+    from {
+        color: white;
+    }
+
+    to {
+        color: $black;
+    }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes shadow-show {
+    from {
+        -webkit-box-shadow: 0px 0px 0px 0px #e0e0e0;
+        box-shadow: 0px 0px 0px 0px #e0e0e0;
+    }
+
+    to {
+        -webkit-box-shadow: $card-shadow;
+        box-shadow: $card-shadow;
+    }
+}
+
+/* Standard syntax */
+@keyframes shadow-show {
+    from {
+        -webkit-box-shadow: 0px 0px 0px 0px #e0e0e0;
+        box-shadow: 0px 0px 0px 0px #e0e0e0;
+    }
+
+    to {
+        -webkit-box-shadow: $card-shadow;
+        box-shadow: $card-shadow;
+    }
+}

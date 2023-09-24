@@ -1,0 +1,40 @@
+
+
+// Footer
+
+@mixin form-text-box{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	border: solid 1px $color-black;
+	border-radius: 4px;
+	padding: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	resize: none;
+	color: $color-white;
+	&::placeholder{
+		color: $color-white;
+	}
+	&:focus{
+		padding: 8px 10px;
+		outline-style: none;
+	}
+}
+
+.contact-form-text-box{
+	@include form-text-box;
+}
+
+.contact-form-text-area{
+	@include form-text-box;
+	height: 140px;
+}
+
+.flights-form-text-box{
+	@include form-text-box;
+}
+
+.flights-form-text-area{
+	@include form-text-box;
+	height: 100px;
+}

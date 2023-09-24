@@ -1,0 +1,34 @@
+/*Colors*/
+
+$color-primary: #003726; // rgb(27,27,91)
+$color-accent: #dcae81; // rgb(201,203,242)
+$color-complementary: #d29034; // rgb(168,141,17)
+
+$color-transparent: rgba(0,0,0,0.5);
+
+$color-white: #ffffff; // rgb(255,255,255)
+$color-gray: black; // rgb(42,42,52)
+$color-black: black; // rgb(4,4,4)
+$color-gray2: #94949b;
+
+$color-whatsApp: #25d366; // rgb(37,211,102)
+
+
+/*Fonts*/
+
+$font-primary: 'Poppins',sans-serif;
+
+
+/*Sizes*/
+
+$nav-bar-height: 70px;
+
+
+/*Breakpoints*/
+
+$breakpoint-xxs: 440px;
+$breakpoint-xs: 576px;
+$breakpoint-s: 768px;
+$breakpoint-m: 992px;
+$breakpoint-l: 1200px;
+$breakpoint-xl: 1400px;

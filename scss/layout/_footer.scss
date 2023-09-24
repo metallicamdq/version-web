@@ -1,0 +1,268 @@
+// Footer
+
+footer {
+    height: auto;
+    background-color: $color-black;
+    color: $color-white;
+
+    body.dark & {
+        background-color: $color-white;
+        color: $color-black;
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    h4{
+        padding: 10px;
+    }
+}
+
+.map-container iframe {
+    width: 80%;
+    height: 200px;
+}
+
+.logo-container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -20px; /* Ajustar el margen superior para que esté 20 píxeles arriba */
+}
+
+.logo-container img {
+    max-width: 70%;
+    height: auto;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s, color 0.2s;
+    font-size: 25px;
+}
+
+.social a:hover {
+    color: orange;
+    transform: scale(1.1);
+}
+
+.marco-legal {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.marco-legal a {
+    text-decoration: none;
+    color: white;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.marco-legal a:hover {
+    color: orange;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        justify-content: space-between;
+    }
+
+    .map-container {
+        width: 33.33%;
+        padding: 0;
+    }
+
+    .logo-container {
+        width: 33.33%;
+        margin-top: 0; /* Restablecer el margen superior para dispositivos más grandes */
+    }
+
+    .marco-legal {
+        width: 33.33%;
+    }
+}
+
+// Signature
+
+.signature {
+    width: 100%;
+    color: $color-white;
+    background-color: $color-primary;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 15px;
+
+    p {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+    }
+
+    h6 {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+
+        a {
+            color: $color-accent;
+            margin-left: 3px;
+
+            &:hover {
+                color: $color-white;
+                text-shadow: 1.25px 1.5px 1px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+
+    @media all and (min-width: $breakpoint-s) {
+        padding: 20px 4%;
+        /* Cambiado a "auto" para que la altura se ajuste al contenido */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Nuevos estilos para la versión responsive */
+.signature p,
+.signature h6 {
+    font-size: 12px;
+    /* Reduzco el tamaño de fuente para pantallas más pequeñas */
+}
+
+.signature h6 a {
+    margin-left: 5px;
+    /* Aumento el margen izquierdo entre el texto y el enlace */
+}
+
+@media all and (max-width: $breakpoint-s) {
+    .signature {
+        height: 50px;
+        padding: 10px 4%;
+        /* Ajusto el espaciado superior e inferior para pantallas pequeñas */
+    }
+}
+
+
+
+
+// WhatsApp
+
+.whatsapp {
+    position: fixed;
+    top: 82.5vh;
+    right: 7%;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+    p {
+        font-size: 10px;
+        font-weight: 600;
+        color: $color-white;
+        background-color: $color-gray2;
+        padding: 8px 10px;
+        border-radius: 12px;
+        box-shadow: 1px 1.5px 1px rgba(0, 0, 0, 0.84);
+    }
+
+    img {
+        width: 53px;
+        transition: all 200ms ease;
+        filter: drop-shadow(1px 1.5px 1px rgba(0, 0, 0, 0.92));
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(1.0);
+        }
+    }
+
+    @media all and (min-width: $breakpoint-s) {
+        top: 83.5vh;
+        right: 5%;
+    }
+
+    body.dark & {
+        p {
+            box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.28);
+        }
+
+        img {
+            filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.28));
+        }
+    }
+}
+
+
+
+
+// Cookies
+
+.cookies {
+    inset: 0;
+    position: fixed;
+    z-index: 30;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cookies-advice {
+    position: fixed;
+    bottom: 10px;
+    width: 97%;
+    max-width: 700px;
+    inset: auto 1.5% 2%;
+    padding: 20px;
+    border-radius: 5px;
+    color: $color-white;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: $color-primary;
+    filter: drop-shadow(1.5px 2.5px 3px rgba(0, 0, 0, 0.9));
+    text-align: center;
+
+    @media all and (min-width: $breakpoint-s) {
+        inset: auto calc(50vw - 350px) 3%;
+    }
+}
+
+.cookies-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}

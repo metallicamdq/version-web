@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/favicon/site.webmanifest">
+    <link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="media/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#e8e8e8">
+    <meta name="msapplication-config" content="media/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Meta Tags -->
+    <title>phaway.</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Volá con phaway. Vuelos privados para particulares y empresas. Experiencias insuperables e inolvidables a cualquier destino del mundo.">
+    <meta name="author" content="southBridge">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:card" value="summary">
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="phaway." />
+    <meta property="og:site_name" content="Phaway" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.phawayvuelos.com.ar" />
+    <meta property="og:image" content="https://www.phawayvuelos.com.ar/media/thumbnail-logo.png" />
+    <meta property="og:image:url" content="https://www.phawayvuelos.com.ar/media/thumbnail-logo.png" />
+    <meta property="og:image:secure_url" content="https://www.phawayvuelos.com.ar/media/thumbnail-logo.png" />
+    <meta property="og:description"
+        content="Volá con phaway. Vuelos privados para particulares y empresas. Experiencias insuperables e inolvidables a cualquier destino del mundo." />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- Google Search Console -->
+    <link rel="canonical" href="https://www.phawayvuelos.com.ar" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S51XWN162R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S51XWN162R');
+    </script>
+</head>
+
+<body>
+    <!-- Web Page -->
+    <header>
+        <div class="nav-bar">
+            <div><i class="nav-bar-button fa-solid fa-ellipsis" onclick="buttonHandler()"></i></div>
+            <div class="nav-bar-logo" onclick="scrollToTop()">
+                <img class="light-mode" src="media/nav-bar-logo.png" alt="Phaway Vuelos">
+                <img class="dark-mode" src="media/nav-bar-logo-dark.png" alt="Phaway Vuelos">
+            </div>
+            <div class="nav-bar-switches">
+                <a class="language-english-switch" href="en/home.html">
+                    <span><i class="fa-solid fa-e"></i><i class="fa-solid fa-s"></i></span>
+                    <span><i class="fa-solid fa-e"></i><i class="fa-solid fa-n"></i></span>
+                </a>
+                <button class="dark-mode-switch" title="Cambio a modo oscuro">
+                    <span><i class="fa-solid fa-lightbulb"></i></span>
+                    <span><i class="fa-regular fa-lightbulb"></i></span>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-bar-menu" id="menu">
+                <li class="nav-bar-menu-option" onclick="linkHandler()"><a href="es/sobre-nosotros.html">Sobre
+                        Nosotros</a></li>
+                <li class="nav-bar-menu-option" onclick="linkHandler()"><a href="es/vuelos-privados.html">Vuelos
+                        Privados</a></li>
+                <li class="nav-bar-menu-option" onclick="linkHandler()"><a href="es/venta-de-aeronaves.html">Venta de
+                        Aeronaves</a></li>
+                <li class="nav-bar-menu-option" onclick="linkHandler()"><a
+                        href="es/experiencias-luxury.html">Experiencias Luxury</a></li>
+                <li class="nav-bar-menu-option" onclick="linkHandler()"><a href="es/preguntas-frecuentes.html">Preguntas
+                        Frecuentes</a></li>
+                <li class="nav-bar-menu-option" onclick="linkHandler()"><a href="es/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flights flights-index">
+            <div class="flights-inner">
+                <strong>No se trata de a dónde quieres llegar, <mark>sino de cómo.</mark></strong>
+                <div class="button-cotizar">
+                    <p>
+                        <a href="#" id="button-cotizar" class="myButton">Cotizá tu vuelo privado</a>
+                    </p>
+                </div>
+            </div>
+            <form name="form" class="flights-form" action="php/flights.php" method="post" enctype="multipart/form-data">
+                <div class="flights-form-page display-flex">
+                    <div class='flights-form-radio-inputs'>
+                        <label>
+                            Ida y Vuelta
+                            <input class="flights-form-radio" type="radio" name="legs" value="Ida y Vuelta" checked>
+                        </label>
+                        <label>
+                            Sólo Ida
+                            <input class="flights-form-radio" type="radio" name="legs" value="Sólo Ida">
+                        </label>
+                    </div>
+                    <div class="input-origen">
+                        <img src="./media/favicon/plane-departure-solid.svg.svg">
+                        <input id="form-input-1" class="flights-form-text-box" type="text" name="from" required
+                            placeholder="Origen">
+                    </div>
+                    <div class="input-destino">
+                        <img src="./media/favicon/plane-arrival-solid.svg.svg">
+                        <input id="form-input-2" class="flights-form-text-box" type="text" name="to" required
+                            placeholder="Destino">
+                    </div>
+                    <label>Fecha (opcional)<input id="input-fecha" class="contact-form-text-box" type="date"
+                            name="depart"></label>
+                    <label id="form-input-return">Regreso (opcional)<input id="input-fecha"
+                            class="contact-form-text-box" type="date" name="return"></label>
+                    <input id="form-input-3" class="flights-form-text-box" type="number"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        maxlength="2" name="pax" required placeholder="Cantidad de pasajeros">
+                    <select id="form-input-4" class="flights-form-text-box" name="aircraft" required>
+                        <option value="">¿Qué tipo de avión preferís?</option>
+                        <option value="Helicóptero">Helicóptero - Hasta 4 pasajeros</option>
+                        <option value="Pistonero">Avión Pistonero - Hasta 6 pasajeros</option>
+                        <option value="Turbohélice">Avión Turbohélice - Hasta 8 pasajeros</option>
+                        <option value="Jet">Jet Ejecutivo - Hasta 8 pasajeros</option>
+                    </select>
+                    <button class="flights-form-button" onclick="formPageHandler()">Siguiente</button>
+                </div>
+                <div class="flights-form-page display-none">
+                    <div class="input-destino">
+                        <img src="./media/favicon/user-solid.svg.svg">
+                        <input id="form-input-3" class="flights-form-text-box" type="text" name="name" required
+                            placeholder="Nombre y Apellido">
+                    </div>
+                    <div class="input-destino">
+                        <img src="./media/favicon/mobile-screen-button-solid.svg.svg" alt="">
+                        <input id="form-input-3" class="flights-form-text-box" type="text" minlength="9" name="contact"
+                            required placeholder="Teléfono">
+                    </div>
+                    <div class="input-destino">
+                        <img src="./media/favicon/email.svg.svg" alt="">
+                        <input id="form-input-3" class="flights-form-text-box" type="text" minlength="4" name="Email"
+                            required placeholder="Correo electronico">
+                    </div>
+                    <div class="input-origen">
+                        <img src="./media/favicon/comment-solid.svg" alt="">
+                        <textarea id="form-input-3" class="flights-form-text-area" name="message"
+                            placeholder="Comentarios (opcional)..."></textarea>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LdeT38nAAAAAKr2ehAGZf5lg-P-iV8qI5gdwUTp"
+                        data-callback="correctCaptcha"></div>
+                    <div id="cotizar-volver">
+                        <button class="flights-form-button" onclick="formPageHandler()">Volver</button>
+                        <input class="flights-form-button" type="submit" name="submitForm" value="¡Cotizar!">
+
+                    </div>
+                </div>
+            </form>
+            <div class="message-sent display-none">
+                <p>
+                    <strong>Su mensaje ha sido enviado.<br>
+                        Nos contactaremos a la brevedad.</strong>
+                </p>
+                <i class="fa-solid fa-envelope fa-2x"></i>
+            </div>
+        </div>
+        <div class="div-with-gradient"></div>
+        <div class="section-container">
+            <div class="vuelos-privados">
+                <div class="container center">
+                    <div class="card">
+                        <h2>Vuelos privados</h2>
+                        <hr />
+                        <li><span>viaja donde quieras, cuando quieras</span> </li>
+                        <li><span>Un servicio a su medida</span></li>
+                        <li><span>Atencion las 24 hs del dia</span></li>
+                        <button><a href="./es/vuelos-privados.html">Ver mas...</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="div-with-gradient"></div>
+            <div class="experiencias">
+                <div class="container center">
+                    <div class="card">
+                        <h2>EXPERIENCIAS</h2> <strong><span class="spanliving">LIVING | BA</span></strong>
+                        <hr />
+                        <li><span>Helitours</span> </li>
+                        <li><span>Polo Experience</span></li>
+                        <li><span>Cabalgatas</span></li>
+                        <li><span>Ruta del Vino</span></li>
+                        <li><span>Hincha de futbol</span></li>
+                        <li><span>Delta experience</span></li>
+                        <li><span>Golf Experience</span></li>
+                        <button><a href="./es/experiencias-luxury.html">Ver mas...</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="div-with-gradient"></div>
+            <div class="venta-aeronaves">
+                <div class="container center">
+                    <div class="card">
+                        <h2>venta de aeronaves</h2>
+                        <hr />
+                        <li><span>viaja donde quieras, cuando quieras</span> </li>
+                        <li><span>Un servicio a su medida</span></li>
+                        <li><span>Atencion las 24 hs del dia</span></li>
+                        <button><a href="./es/vuelos-privados.html">Ver mas...</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="div-with-gradient"></div>
+            <div class="contacto">
+                <div class="container center">
+                    <div class="card">
+                        <h2>contacto</h2>
+                        <hr />
+                        <li><span>viaja donde quieras, cuando quieras</span> </li>
+                        <li><span>Un servicio a su medida</span></li>
+                        <li><span>Atencion las 24 hs del dia</span></li>
+                        <button><a href="./es/vuelos-privados.html">Ver mas...</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="div-with-gradient"></div>
+
+        </div>
+        <div class="partners">
+            <p class="partners-text">Confían en nosotros</p>
+            <div class="partners-inner">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img class="light-mode" src="media/brands-ameri-sud.png" alt="Ameri Sud">
+                            <img class="dark-mode" src="media/brands-ameri-sud-dark.png" alt="Ameri Sud">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="media/brands-aysa.png" alt="Aysa">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="media/brands-global-solution.png" alt="Global Solution">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="media/brands-living-ba.png" alt="Living Buenos Aires">
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="media/brands-marmotec.png" alt="Marmotec">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="media/brands-sialar.png" alt="Sialar">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img class="light-mode" src="media/brands-sky-aviation.png" alt="Sky Aviation">
+                            <img class="dark-mode" src="media/brands-sky-aviation-dark.png" alt="Sky Aviation">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img class="light-mode" src="media/brands-carmelo-golf.png" alt="Carmelo Golf">
+                            <img class="dark-mode" src="media/brands-carmelo-golf-dark.png" alt="Carmelo Golf">
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="media/brands-polo-fun.png" alt="Polo Fun">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="media/brands-el-cardo.png" alt="El Cardo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img class="light-mode" src="media/brands-el-picaflor.png" alt="El Picaflor">
+                            <img class="dark-mode" src="media/brands-el-picaflor-dark.png" alt="El Picaflor">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img class="light-mode" src="media/brands-patagonia-polo.png" alt="Patagonia Polo">
+                            <img class="dark-mode" src="media/brands-patagonia-polo-dark.png" alt="Patagonia Polo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="map-container">
+                <h4>
+                    Encontranos
+                </h4>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.8473853556625!2d-58.58655922443654!3d-34.45602174971273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5176e8d535f%3A0x1f3829912ba9bc9a!2sAeropuerto%20Internacional%20de%20San%20Fernando!5e0!3m2!1ses-419!2sar!4v1690290242832!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="logo-container">
+                <img src="./media/nav-bar-logo-dark.png" alt="">
+                <div class="social">
+                    <a href="https://www.instagram.com/livingbaoficial/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i></a>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://wa.me/5492235051320" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:info@phawayvuelos.com.ar" target="_blank" rel="noopener noreferrer">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="marco-legal">
+                <a href="../root/legal/aviso-legal.html">Aviso Legal</a>
+                <a href="../root/legal/politica-de-privacidad.html">Política de Privacidad</a>
+                <a href="../root/legal/politica-de-cookies.html">Política de Cookies</a>
+                <a href="../root/legal/condiciones-generales.html">Condiciones Generales</a>
+                <a href="https://wa.me/5492235051320?text=Hola.%20Quisiera%20cancelar%20un%20servicio%20solicitado."
+                    target="_blank" rel="noopener noreferrer">Botón de Arrepentimiento</a>
+            </div>
+        </div>
+        <div class="signature">
+            <p>© 2023 Todos los derechos reservados.</p>
+            <h6>Sitio web desarrollado por <a href="https://www.southbridge.com.ar" target="_blank"
+                    rel="noopener noreferrer">&#60;southBridge> IT Solutions</a></h6>
+        </div>
+        <a class="whatsapp" href="https://wa.me/5492235051320" target="_blank" rel="noopener noreferrer">
+            <p>¡Estamos Online!</p>
+            <img src="media/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </footer>
+    <div class="cookies">
+        <div class="cookies-advice">
+            <p>Al navegar por este sitio acepta el uso de cookies para agilizar tu experiencia de usuario.</p>
+            <div class="cookies-buttons">
+                <a class="cookies-button" href="legal/politica-de-cookies.html">Ver más</a>
+                <button class="cookies-button" onclick="cookiesHandler()">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/font-awesome.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

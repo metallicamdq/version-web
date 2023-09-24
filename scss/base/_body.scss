@@ -1,0 +1,75 @@
+body{
+	margin: auto;
+	background-color: $color-white;
+	color: $color-black;
+	font-family: $font-primary;
+	p{
+		margin: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	ul{
+		list-style: none;
+	}
+	address{
+		font-style: normal;
+	}
+	h1{
+		// 
+		margin: 0;
+	}
+	h2{
+		// Pages Titles
+		margin: 0;
+		font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+	}
+	h3{
+		// Experiences Titles
+		margin: 0;
+		font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+	}
+	h4{
+		// Contact Info
+		margin: 0;
+	}
+	h5{
+		// Faqs Titles
+		margin: 0;
+	}
+	h6{
+		// Signature
+		margin: 0;
+	}
+	input[type=number]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-outer-spin-button { 
+  		-webkit-appearance: none; 
+  		margin: 0; 
+	}
+	input[type=number] {
+		-moz-appearance:textfield;
+	}
+	.display-flex{
+		display: flex;
+	}
+	.display-none{
+		display: none;
+	}
+	.dark-mode{
+		display: none;
+	}
+	&.dark{
+		background-color: $color-black;
+		color: $color-white;
+		.dark-mode{
+			display: block;
+		}
+		.light-mode{
+			display: none;
+		}
+	}
+}
